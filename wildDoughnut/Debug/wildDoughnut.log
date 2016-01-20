@@ -1,0 +1,133 @@
+﻿Build started 8/6/2012 11:52:54 PM.
+     1>Project "D:\Ray\Documents\wildDoughnut\wildDoughnut\wildDoughnut.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\wildDoughnut.lastbuildstate".
+       CudaClean:
+         cmd.exe /C "C:\Users\Ray\AppData\Local\Temp\tmpe1048b0f364144259d5a0c13703b5ea2.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\rayTracer.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\rayTracer.cu" -clean
+         
+         D:\Ray\Documents\wildDoughnut\wildDoughnut>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\rayTracer.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\rayTracer.cu" -clean 
+         Deleting file "Debug\..\Source\rayTracer.cu.deps".
+       CudaClean:
+         cmd.exe /C "C:\Users\Ray\AppData\Local\Temp\tmpde1d31e9253045028b8d8666b12508b3.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\vector.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\vector.cu" -clean
+         
+         D:\Ray\Documents\wildDoughnut\wildDoughnut>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\vector.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\vector.cu" -clean 
+         Deleting file "Debug\..\Source\vector.cu.deps".
+       InitializeBuildStatus:
+         Creating "Debug\wildDoughnut.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c D:\Ray\Documents\wildDoughnut\Source\rayTracer.cu 
+       AddCudaCompileDeps:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /I. /FIcuda_runtime.h /c D:\Ray\Documents\wildDoughnut\Source\vector.cu 
+       CudaBuild:
+         Compiling CUDA source file ..\Source\rayTracer.cu...
+         cmd.exe /C "C:\Users\Ray\AppData\Local\Temp\tmp6649972cf841422eb41cb1204c10ad8e.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\rayTracer.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\rayTracer.cu"
+         
+         D:\Ray\Documents\wildDoughnut\wildDoughnut>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\rayTracer.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\rayTracer.cu" 
+         rayTracer.cu
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(262): warning : variable "error" was set but never used
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(575): warning : variable "error" was set but never used
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(608): warning : variable "radius" was declared but never referenced
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(221): warning : variable "error" was set but never used
+                   detected during instantiation of "void copyArrayObjectToDevice(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::pointLight]" 
+         (588): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(221): warning : variable "error" was set but never used
+                   detected during instantiation of "void copyArrayObjectToDevice(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::blinnShader]" 
+         (589): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(221): warning : variable "error" was set but never used
+                   detected during instantiation of "void copyArrayObjectToDevice(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::MarchingTorus]" 
+         (590): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(248): warning : variable "error" was set but never used
+                   detected during instantiation of "void deleteDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::pointLight]" 
+         (597): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(248): warning : variable "error" was set but never used
+                   detected during instantiation of "void deleteDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::blinnShader]" 
+         (598): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(248): warning : variable "error" was set but never used
+                   detected during instantiation of "void deleteDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::MarchingTorus]" 
+         (599): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(235): warning : variable "error" was set but never used
+                   detected during instantiation of "void updateDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::MarchingTorus]" 
+         (611): here
+         
+         tmpxft_00001590_00000000-0_rayTracer.cudafe1.gpu
+         tmpxft_00001590_00000000-5_rayTracer.cudafe2.gpu
+         rayTracer.cu
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(262): warning : variable "error" was set but never used
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(575): warning : variable "error" was set but never used
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(608): warning : variable "radius" was declared but never referenced
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(221): warning : variable "error" was set but never used
+                   detected during instantiation of "void copyArrayObjectToDevice(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::pointLight]" 
+         (588): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(221): warning : variable "error" was set but never used
+                   detected during instantiation of "void copyArrayObjectToDevice(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::blinnShader]" 
+         (589): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(221): warning : variable "error" was set but never used
+                   detected during instantiation of "void copyArrayObjectToDevice(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::MarchingTorus]" 
+         (590): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(248): warning : variable "error" was set but never used
+                   detected during instantiation of "void deleteDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::pointLight]" 
+         (597): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(248): warning : variable "error" was set but never used
+                   detected during instantiation of "void deleteDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::blinnShader]" 
+         (598): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(248): warning : variable "error" was set but never used
+                   detected during instantiation of "void deleteDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::MarchingTorus]" 
+         (599): here
+         
+     1>D:/Ray/Documents/wildDoughnut/Source/rayTracer.cu(235): warning : variable "error" was set but never used
+                   detected during instantiation of "void updateDeviceArrayObject(wildDoughnut::ArrayObject<T> *) [with T=wildDoughnut::MarchingTorus]" 
+         (611): here
+         
+         tmpxft_00001590_00000000-0_rayTracer.cudafe1.cpp
+         tmpxft_00001590_00000000-11_rayTracer.ii
+       CudaBuild:
+         Compiling CUDA source file ..\Source\vector.cu...
+         cmd.exe /C "C:\Users\Ray\AppData\Local\Temp\tmp055aef84b0734fa9bc3a8785d447f7bb.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\vector.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\vector.cu"
+         
+         D:\Ray\Documents\wildDoughnut\wildDoughnut>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include"  -G  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd  " -o "Debug\vector.cu.obj" "D:\Ray\Documents\wildDoughnut\Source\vector.cu" 
+         vector.cu
+         tmpxft_000010c8_00000000-0_vector.cudafe1.gpu
+         tmpxft_000010c8_00000000-5_vector.cudafe2.gpu
+         vector.cu
+         tmpxft_000010c8_00000000-0_vector.cudafe1.cpp
+         tmpxft_000010c8_00000000-11_vector.ii
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\main.cpp
+         main.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Ray\Documents\wildDoughnut\Debug\wildDoughnut.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\lib\Win32" cudart.lib glut32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\wildDoughnut.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Ray\Documents\wildDoughnut\Debug\wildDoughnut.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Ray\Documents\wildDoughnut\Debug\wildDoughnut.lib" /MACHINE:X86 Debug\rayTracer.cu.obj
+         Debug\vector.cu.obj
+         Debug\main.obj
+     1>main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         wildDoughnut.vcxproj -> D:\Ray\Documents\wildDoughnut\Debug\wildDoughnut.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Ray\Documents\wildDoughnut\Debug\wildDoughnut.exe;#1" /manifest Debug\wildDoughnut.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\wildDoughnut.unsuccessfulbuild".
+         Touching "Debug\wildDoughnut.lastbuildstate".
+     1>Done Building Project "D:\Ray\Documents\wildDoughnut\wildDoughnut\wildDoughnut.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.79
